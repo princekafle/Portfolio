@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: playfair display;
+}
+
+header {
+    /* background-color: rgb(255, 255, 255); */
+    height: auto;
+    background: url(image/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+nav {
+    font-family: playfair display;
+}
+
+.times {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-button {
+    display: none;
+    margin-right: -50px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+    padding: 20px 32px;
+    padding-top: 75px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 100%;
+    height: 300px;
+    display: none;
+    z-index: 1;
+}
+
+.hideMobile a {
+    color: #000000;
+}
+
+.hideMobile:hover a {
+    color: rgb(57, 26, 170);
+}
+
+.sidebar .first-list {
+    padding-bottom: 14px;
+}
+
+nav h2 {
+    z-index: 99;
+}
+
+nav .line {
+    margin-top: 10px;
+    height: 0.5px;
+    width: 100%;
+    background-color: rgb(230, 217, 217);
+    display: none;
+    z-index: 99;
+}
+
+@media screen and (max-width: 992px) {
+    .menu-button {
+        display: block;
+    }
+    .hideMobile {
+        display: none;
+    }
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    color: #ff0000;
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* background-color: rgb(70, 65, 65); */
+    font-family: playfair display;
+}
+
+.main h2 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.main h1 {
+    font-weight: 500;
+    font-size: 70px;
+}
+
+.main h1,
+h2,
+h3 {
+    color: black;
+    margin-left: 20px;
+}
+
+.main h3 {
+    margin-left: 25px;
+}
+
+.main span {
+    color: rgb(57, 26, 170);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.main p {
+    font-size: 20px;
+    color: black;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.main .left {
+    margin-left: 40px;
+    margin-top: 70px;
+    width: 40%;
+}
+
+.left-bottom {
+    height: 150px;
+    width: 100%;
+    margin-left: 25px;
+}
+
+.left-bottom i {
+    color: rgb(60, 153, 235);
+    font-size: 30px;
+    position: absolute;
+    /* top: 10px;
+    left: 10px; */
+}
+
+.left-bottom div {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 151, 119);
+    display: inline-block;
+    margin-top: 40px;
+    /* background-color: blue; */
+    position: relative;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.left-bottom div:hover {
+    background-color: blue;
+    transition: all 0.5s;
+}
+
+.left-bottom div:hover i {
+    color: #fff;
+    transition: all 0.5s;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+
+/* .main .mainright {} */
+
+.mainright img {
+    /* height: 520px;
+    width: 100%; */
+    margin-top: 5px;
+    /* box-shadow: 10px 20px 15px rgba(0,0,0,0.5); */
+    /* filter:  drop-shadow(30px 30px 4px #4444dd); */
+}
+
+.service {
+    background: url(image/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.service h2 {
+    color: rgb(57, 26, 170);
+    font-size: 45px;
+}
+
+.service .one {
+    padding: 20px;
+    /* height:350px;
+    /*width:350px; */
+}
+
+.service .one:hover {
+    cursor: pointer;
+    border: 2px solid rgb(57, 26, 170);
+    border-radius: 16px;
+    transform: scale(1.05);
+    overflow: hidden;
+}
+
+.service .one i {
+    color: rgb(57, 26, 170);
+    font-size: 38px;
+    /* padding-left: 100px; */
+}
+
+.service .one h3 {
+    font-size: 26px;
+    padding: 5px;
+    text-align: center;
+}
+
+.service .one p {
+    font-size: 18px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 575px) {
+    .service {
+        height: 1450px;
+    }
+    .project .card .btn {
+        margin-left: 30%;
+    }
+    .about {
+        height: 900px;
+    }
+    .about .row .second {
+        margin: 70px 0px;
+    }
+    .about .row .second .container {
+        width: auto;
+    }
+    .contact .row .info {
+        margin-left: 20px;
+    }
+    .contact .row .mes {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .service {
+        height: 900px;
+    }
+    .project .card .btn {
+        margin-left: 180px;
+    }
+    .about {
+        height: 1050px;
+    }
+    .about .container {
+        width: auto;
+    }
+    .about .row .second {
+        margin: 70px 0px;
+    }
+    .contact .row .mes {
+        margin-top: 70px;
+    }
+    .contact {
+        height: 1080px;
+    }
+    .contact .row .info {
+        margin-left: 70px;
+    }
+    .contact .row .mes {
+        margin-left: 90px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .service {
+        height: 900px;
+    }
+    .project .card .btn {
+        margin-left: 100px;
+        padding: 0;
+    }
+    .about .row .second {
+        margin: 60px 0px;
+    }
+    .contact .row .info {
+        padding-left: 80px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .service {
+        height: 600px;
+    }
+    .project .card .btn {
+        margin-left: 30%;
+        width: auto;
+    }
+    .about .row .second {
+        margin: 70px 0px;
+    }
+    .contact .row .info {
+        padding-left: 160px;
+    }
+}
+
+.project {
+    background: url(image/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: auto;
+}
+
+.project h2 {
+    color: rgb(57, 26, 170);
+    font-size: 45px;
+}
+
+.project .col .card {
+    background: rgba(236, 239, 241, 255);
+    border-radius: 20px;
+}
+
+.project .col .card h5 {
+    color: rgb(57, 26, 170);
+}
+
+.about {
+    background: url(image/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.about h2 {
+    color: rgb(57, 26, 170);
+    font-size: 45px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+
+/* Style the back side */
+
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.about .flip-card {
+    height: 300px;
+    width: 65%;
+}
+
+.about .flip-card p {
+    padding: 0px 8px;
+}
+
+.contact {
+    background: url(image/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.contact h2,
+h4 {
+    color: rgb(57, 26, 170);
+    font-size: 45px;
+}
+
+.contact .circular-outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    /* Adjust as needed */
+    height: 50px;
+    /* Adjust as needed */
+    border: 2px solid rgb(57, 26, 170);
+    /* Adjust the border color and width as needed */
+    border-radius: 50%;
+    font-size: 20px;
+    /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
+
+.contact .circular-outline:hover {
+    cursor: pointer;
+    background-color: rgb(57, 26, 170);
+    color: #f1f1f1;
+}
+
+.contact form input::placeholder {
+    font-size: 20px;
+}
+
+.contact #message {
+    height: 100px;
+}
+
+.last {
+    background: url(image/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+}
