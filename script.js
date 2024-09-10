@@ -14,7 +14,6 @@ const hidenavbar = () => {
     line.style.display = 'none'
 }
 
-//for typing text effect on homepage
 
 let progress = document.querySelectorAll('.progress span'),
     spans = document.querySelectorAll('.progress-title span');
